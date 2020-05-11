@@ -1,0 +1,39 @@
+<app-stepper [stepTitles]='stepTitles'
+             [currentStepNumber]="currentStepNumber"></app-stepper>
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
+
+<div fxLayoutAlign="space-between center">
+  <button class="btn back"
+          type="button"
+          (click)="clickBack()"
+          *ngIf="currentStepNumber != 1">Back
+    <span class="sprites arrow-left"></span>
+  </button>
+  <div fxFlex
+       fxLayoutAlign="end">
+    <button class="btn save"
+            type="button"
+            (click)="clickSave()">Save
+      <span class="sprites sprites-safe"></span>
+    </button>
+    <button type="button"
+            class="btn next"
+            [ngClass]="{'btn-disabled': !(isFormValid$ | async)}"
+            (click)="clickNext()"
+            [disabled]="!(isFormValid$ | async)"
+            *ngIf="currentStepNumber != 6"
+            disabled>Next
+      <span class="sprites arrow-right"></span>
+    </button>
+  </div>
+
+  <button type="button"
+          class="btn submit"
+          (click)="clickSubmit()"
+          *ngIf="currentStepNumber == 6">
+    Submit
+  </button>
+</div>

@@ -1,0 +1,44 @@
+@import '~src/styles/color';
+
+.number {
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  margin: 5px 20px;
+  font-size: 20px;
+  padding: 15px;
+  height: 20px;
+  width: 20px;
+}
+
+.number-finished {
+  background: $color-mantis;
+  color: $color-white;
+}
+
+.number-active {
+  border: 2px solid $color-dodger-blue;
+  color: $color-dodger-blue;
+}
+
+.number-empty {
+  border: 2px solid $color-gainsboro;
+  color: $color-gainsboro;
+}
+
+.caption {
+  font-size: 15px;
+}
+
+.caption-finished {
+  color: $color-mantis;
+}
+
+.caption-active {
+  color: $color-dodger-blue;
+}
+
+.caption-empty {
+  color: $color-grey;
+}

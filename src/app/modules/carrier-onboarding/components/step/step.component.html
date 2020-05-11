@@ -1,0 +1,13 @@
+<div fxLayout="column"
+     fxLayoutAlign="space-between center">
+  <span class="number"
+        [ngClass]="{
+          'number-finished': status == stepStatus.Finished,
+          'number-active':  status == stepStatus.Active,
+          'number-empty':  status == stepStatus.Empty}">{{step}}</span>
+  <span class="caption"
+        [ngClass]="{
+          'caption-active':status == stepStatus.Active,
+          'caption-finished':status == stepStatus.Finished,
+          'caption-empty':status == stepStatus.Empty}">{{title}}</span>
+</div>

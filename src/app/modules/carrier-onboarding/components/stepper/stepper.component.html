@@ -1,0 +1,4 @@
+<app-step *ngFor='let step of stepTitles, let i=index'
+          [status]='getStepStatus(i+1)'
+          [step]='i+1'
+          [title]='step'></app-step>

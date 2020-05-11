@@ -1,0 +1,55 @@
+@import '~src/styles/color';
+
+:host {
+  height: 100%;
+  overflow: scroll;
+
+  .head {
+    margin: 0 0 12px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .title {
+    margin-right: 9px;
+    font-size: 15px;
+    color: $color-dodger-blue;
+  }
+
+  .label-column-1 {
+    flex: 1 1 84px;
+    box-sizing: border-box;
+    max-width: 84px;
+    min-width: 84px;
+  }
+
+  .label-column-2 {
+    flex: 1 1 114px;
+    box-sizing: border-box;
+    max-width: 114px;
+    min-width: 114px;
+  }
+
+  span {
+    color: red;
+  }
+
+  .ng-invalid.ng-touched {
+    border-color: red !important;
+  }
+
+  input[type='text']:focus {
+    border-color: $color-dodger-blue;
+  }
+
+  input[type='text'] {
+    padding: 9px;
+    height: 38px;
+    margin: 0 0 10px;
+    border: 1px solid $color-solitude-1;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+}

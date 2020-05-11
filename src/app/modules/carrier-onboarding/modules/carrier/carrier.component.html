@@ -1,0 +1,125 @@
+<div class="head"
+     fxLayout="row">
+  <span class="title"><strong>MC Number 123456</strong></span>
+  <app-application-status></app-application-status>
+  <a href=''
+     fxFlex
+     fxLayoutAlign="end">
+    <mat-icon>sync</mat-icon>
+  </a>
+</div>
+
+<h2>Carrier:</h2>
+
+<form [formGroup]="formGroup"
+      ngxsForm="CarrierState.carrierForm">
+  <div fxLayout="row"
+       fxLayoutAlign="start center">
+    <label class="label-column-1"><span>*</span>Carrier:</label>
+    <input type="text"
+           class="form-control"
+           formControlName="carrier"
+           required
+           fxFlex>
+  </div>
+
+  <div fxLayout="row"
+       fxLayoutAlign="start center">
+    <label class="label-column-1">DOT<br>Number:</label>
+    <input fxFlex
+           type="text"
+           formControlName="dotNumber">
+  </div>
+
+  <div fxLayout="row"
+       fxLayoutGap="20px">
+    <div fxFlex="50">
+      <div fxLayout="row"
+           fxLayoutAlign="start center">
+        <label class="label-column-1"><span>*</span>Address:</label>
+        <input fxFlex
+               type="text"
+               formControlName="address"
+               required>
+      </div>
+      <div fxLayout="row"
+           fxLayoutAlign="start center">
+        <label class="label-column-1"><span>*</span> Phone:</label>
+        <input fxFlex
+               type="text"
+               formControlName="phone"
+               required>
+      </div>
+      <div fxLayout="row"
+           fxLayoutAlign="start center">
+        <label class="label-column-1">Cellular:</label>
+        <input fxFlex
+               type="text"
+               formControlName="cellular">
+      </div>
+      <div fxLayout="row"
+           fxLayoutAlign="start center">
+        <label class="label-column-1"><span>*</span> Country:</label>
+        <input fxFlex
+               type="text"
+               formControlName="country"
+               required>
+      </div>
+      <div fxLayout="row"
+           fxLayoutAlign="start center">
+        <label class="label-column-1"><span>*</span>Province:</label>
+        <input fxFlex
+               type="text"
+               formControlName="province"
+               required>
+      </div>
+      <div class="row-small"
+           fxLayoutAlign="start center">
+        <label class="label-column-1"><span>*</span> Email Address:</label>
+        <input fxFlex
+               type="text"
+               formControlName="emailAddress"
+               required>
+      </div>
+    </div>
+    <div fxFlex="50">
+      <div fxLayout="row"
+           fxLayoutAlign="start center">
+        <label class="label-column-2">Address 2:</label>
+        <input fxFlex
+               type="text"
+               formControlName="address2">
+      </div>
+      <div fxLayout="row"
+           fxLayoutAlign="start center">
+        <label class="label-column-2">Ext:</label>
+        <input fxFlex
+               type="text"
+               formControlName="ext">
+      </div>
+      <div fxLayout="row"
+           fxLayoutAlign="start center">
+        <label class="label-column-2"><span>*</span>City:</label>
+        <input fxFlex
+               type="text"
+               formControlName="city"
+               required>
+      </div>
+      <div fxLayout="row"
+           fxLayoutAlign="start center">
+        <label class="label-column-2">Fax:</label>
+        <input fxFlex
+               type="text"
+               formControlName="fax">
+      </div>
+      <div fxLayout="row"
+           fxLayoutAlign="start center">
+        <label class="label-column-2"><span>*</span>Postal Code:</label>
+        <input fxFlex
+               type="text"
+               formControlName="postalCode"
+               required>
+      </div>
+    </div>
+  </div>
+</form>
