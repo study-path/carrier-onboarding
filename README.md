@@ -2,8 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
-![]
-(/assets/images/CarrieronBoarding.png)
+![Check] (/assets/images/CarrieronBoarding.png)
 
 ## Development server
 
