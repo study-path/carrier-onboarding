@@ -1,6 +1,9 @@
-# CarrierOnBoarding
+# CarrierOnBDoarding
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+
+![]
+(img src="/assets/images/CarrieronBoarding.png")
 
 ## Development server
 
